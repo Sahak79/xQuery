@@ -31,6 +31,7 @@ var __xQuery__ = (function() {
         }else {
 
         }
+        return this;
     }
 
     return{
