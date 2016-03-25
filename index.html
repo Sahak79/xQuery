@@ -4,7 +4,10 @@
         <title></title>
         <script src="src/xquery.js" ></script>
         <script type="text/javascript">
-            xQuery('.classSelector');
+            window.onload = function() {
+                xQuery('span').css('color', 'red').css('font-size', '10px');
+                xQuery('.classSelector').css({'color': 'blue', 'font-size' : '22px'});
+            };
         </script>
     </head>
     <body>
@@ -12,6 +15,7 @@
         <span>2</span>
         <span class="classSelector">3</span>
         <span class="classSelector">4</span>
+        <span id="idSelector2">5</span>
 
     </body>
 </html>
