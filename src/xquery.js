@@ -25,14 +25,15 @@ var __xQuery__ = (function() {
         }else if(arguments.length == 2) {
             attacheStyle({name : arguments[0], value : arguments[1]});
         }
+        function attacheStyle(styleObj) {
+            for(var j =0; j<selectedElements.length; j++) {
+                selectedElements[j].style[styleObj.name] = styleObj.value;
+            }
+        }
         return this;
     }
 
-    function attacheStyle(styleObj) {
-        for(var j =0; j<selectedElements.length; j++) {
-            selectedElements[j].style[styleObj.name] = styleObj.value;
-        }
-    }
+
 
     function hide() {
         var duration = 1000; // default duration 1 sec
