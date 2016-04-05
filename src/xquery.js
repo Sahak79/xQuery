@@ -35,8 +35,8 @@ var __xQuery__ = (function() {
     }
 
     function hide() {
-        var duration = 1000;
-        if(arguments.length == 1) {
+        var duration = 1000; // default duration 1 sec
+        if(arguments.length == 1) { // call hide() with millisecond argument
             duration = arguments[0];
         }
         for(var j =0; j<selectedElements.length; j++) {
